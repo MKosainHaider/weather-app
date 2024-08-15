@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather App</title>
+</head>
+
+<body >
+    <div></div>
+    <div id="app"
+        class="p-8 bg-white rounded-2xl shadow-2xl max-w-lg w-full transform hover:scale-105 transition-transform duration-300">
+        <h1 class="text-4xl font-extrabold text-center text-blue-700 mb-8">Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name"
+            class="w-full p-4 border border-gray-300 rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            autocomplete="off" />
+        <button id="getWeatherBtn"
+            class="w-full bg-gradient-to-r from-blue-500 to-indigo-700 text-white font-bold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-indigo-800 transition-all duration-300">
+            Get Weather
+        </button>
+        <div id="weatherResult" class="mt-8 flex flex-wrap justify-center space-x-4">
+            <!-- Weather cards will be dynamically inserted here -->
+        </div>
+    </div>
+</body>
+
+</html>
